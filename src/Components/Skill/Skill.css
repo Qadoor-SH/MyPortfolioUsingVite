@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .app__skills {
+    @apply w-full flex-col;
+  }
+
+  .app__skills-container {
+    @apply flex flex-col md:flex-row w-full md:w-4/5 mt-12;
+  }
+
+  .app__skills-list {
+    @apply flex flex-wrap justify-center items-center md:justify-start md:items-start me-0 md:me-20;
+  }
+
+  .app__skills-item {
+    @apply flex-col text-center m-4 transition-all;
+    div {
+      @apply w-24 h-24 rounded-full bg-white hover:shadow-card;
+      img {
+        @apply w-1/2 h-1/2;
+      }
+    }
+    p {
+      @apply font-medium mt-2;
+    }
+  }
+  .app__skills-exp {
+    @apply flex justify-start items-start flex-col md:mt-8;
+  }
+
+  .app__skills-exp-item {
+    @apply flex justify-start items-start flex-row w-full my-4;
+  }
+
+  .app__skills-exp-works {
+    @apply flex-1;
+    .app__skills-exp-work {
+      @apply flex justify-start items-start flex-col mb-4 cursor-pointer;
+
+      h4 {
+        @apply font-medium;
+      }
+
+      p {
+        @apply font-normal text-gray mt-1;
+      }
+    }
+  }
+
+  .app__skills-exp-year {
+    @apply me-4 sm:me-12;
+
+    p {
+      @apply font-extrabold text-secondary;
+    }
+  }
+}

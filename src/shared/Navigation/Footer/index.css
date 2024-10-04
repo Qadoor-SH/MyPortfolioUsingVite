@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app__footer {
+    @apply w-full flex-col;
+    /* flex: 1; */
+  }
+
+  .app__footer-cards {
+    @apply w-full md:w-3/5 flex justify-evenly items-center flex-wrap mt-16 mx-8 mb-8 bg-white;
+
+    .app__footer-card {
+      @apply w-full sm:min-w-72 flex flex-row justify-start items-center my-4 mx-0 p-4 rounded-xl cursor-pointer bg-primary transition-all;
+
+      img {
+        @apply w-10 h-10 my-0 mx-3;
+      }
+
+      p {
+        @apply font-medium;
+      }
+      a {
+        @apply font-medium flex flex-row justify-start items-center;
+        /* text-decoration: none; */
+      }
+    }
+  }
+
+  /* .app__footer-cards .app__footer-card:last-child {
+    @apply bg-primary;
+    background-color:#f2f7fb ;
+  } */
+
+  .app__footer-cards .app__footer-card:hover {
+    @apply shadow-card;
+  }
+
+  .app__footer-form {
+    @apply flex-col w-full md:w-3/5 my-4 mx-0 md:my-4 md:mx-8;
+
+    div {
+      @apply w-full my-3 rounded-xl bg-primary cursor-pointer transition-all hover:shadow-card;
+
+      input,
+      textarea {
+        @apply w-full p-4 border-none rounded-lg bg-primary text-secondary outline-none;
+        /* outline: none; */
+      }
+
+      textarea {
+        @apply h-44;
+      }
+    }
+
+    button {
+      @apply py-4 px-8 border-none bg-secondary font-medium text-white outline-none mt-8 cursor-pointer hover:bg-[#2430af];
+      /* outline: none;
+    font-family: var(--font-base); */
+    }
+  }
+
+  .app__footer-accounts {
+    @apply w-4/5 mt-8 sm:hidden space-x-2;
+    div {
+      @apply w-10 h-10 rounded-full bg-white border-lightGray border-solid border transition-all sm:hidden hover:bg-secondary hover:border-secondary hover:text-white;
+      svg {
+        @apply w-5 h-5 text-gray;
+      }
+    }
+  }
+}

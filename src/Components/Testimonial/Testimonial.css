@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .app__testimonial {
+    @apply w-full flex-col;
+  }
+
+  .app__testimonial-item {
+    @apply w-full md:w-2/3 min-h-80 bg-white flex flex-col sm:flex-row p-8 rounded-2xl shadow-card transition-all;
+
+    img {
+      @apply w-24 h-24 rounded-full object-cover;
+    }
+  }
+
+  .app__testimonial-content {
+    @apply flex flex-1 flex-col justify-around items-start h-full p-0 mt-8 sm:mt-0 sm:px-8 sm:py-0 text-start;
+
+    p {
+      @apply text-xl text-black;
+    }
+
+    h4 {
+      @apply font-semibold text-secondary mt-8;
+    }
+
+    h5 {
+      @apply font-normal text-gray mt-1;
+    }
+  }
+  .app__testimonial-btns {
+    @apply flex-row mt-4 rtl:flex-row-reverse;
+
+    div {
+      @apply h-12 w-12 rounded-full m-4 transition-all bg-white hover:bg-secondary text-secondary hover:text-white;
+
+      svg {
+        @apply w-5 h-5;
+      }
+    }
+  }
+
+  .app__testimonial-brands {
+    @apply w-full md:w-4/5 flex-wrap mt-8;
+    div {
+      @apply w-28 m-4 sm:w-36 sm:m-6 grayscale hover:grayscale-0;
+      img {
+        @apply w-full h-auto object-cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "about": "نبذة",
+  "home": "الرئيسية",
+  "work": "أعمال",
+  "skills": "مهارات",
+  "contact": "التواصل",
+  "testimonials": "اشادات",
+  "hello_i_am": "مرحبا أنا",
+  "i_know_that": "أعرف ان",
+  "i_know_good_development": "أعرف ان <1>التطوير الجيد</1>",
+  "means_good_business": "يعني <1>عمل جيد</1>",
+  "means": "يعني",
+  "good_business": "عمل جيد",
+  "my_creative_portfolio_section": "قسم <1>ملف</1><2 />إبداعاتي",
+  "skills_experience": "الخبرات والمهارات",
+  "coffee_chat": "خذ كوب قهوة و دردش معي",
+  "your_name": "أسمك",
+  "your_email": "عنوان البريد",
+  "your_message": "رسالتك",
+  "send_message": "إرسال",
+  "sending_message": "جاري الإرسال",
+  "thanks_for_getting_in_touch": "شكرا لتواصاك معنا!"
+}

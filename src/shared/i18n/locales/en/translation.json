@@ -1,0 +1,20 @@
+{
+  "about": "About",
+  "home": "Home",
+  "work": "Work",
+  "skills": "Skills",
+  "contact": "Contact",
+  "testimonials": "Testimonials",
+  "hello_i_am": "Hello I am",
+  "i_know_good_development": "I know that <1>Good Development</1>",
+  "means_good_business": "means <1>Good Business</1>",
+  "my_creative_portfolio_section": " My Creative <1>Portfolio</1><2 />section",
+  "skills_experience": " Skills & Experience",
+  "coffee_chat": "Take a coffee & chat with me",
+  "your_name": "Your Name",
+  "your_email": "Your Email",
+  "your_message": "Your Message",
+  "send_message": "Send Message",
+  "sending_message": "Sending Message",
+  "thanks_for_getting_in_touch": "Thank you for getting in touch!"
+}

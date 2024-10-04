@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .app__about {
+    @apply flex-col w-full;
+  }
+  .app__profiles {
+    @apply flex justify-center items-start flex-wrap mt-8;
+  }
+  .app__profiles-item {
+    @apply w-48 flex justify-start items-start flex-col m-8;
+    img {
+      @apply w-full h-44 rounded-2xl object-cover;
+    }
+  }
+}
