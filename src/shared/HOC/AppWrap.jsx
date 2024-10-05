@@ -4,8 +4,6 @@ import SocialMedia from "../UIElements/SocialMedia";
 import { copyrights } from "../../userDetails";
 
 const AppWrap = (Component, idName, classNames) => {
-  console.log(classNames);
-
   return function HOC() {
     const { i18n } = useTranslation();
     return (

@@ -1,17 +1,17 @@
 import { useEffect } from "react";
-// import { pageHeader } from "../constants";
-import myProfile from "../../assets/myProfile.png";
+import { pageHeader } from "../../userDetails";
 
 const useSetWebsiteHeader = () => {
   useEffect(() => {
     //set page icon here
-    let link = document.querySelector("link[rel~='icon']");
+    let link = document.getElementById("link[rel~='icon']");
     if (!link) {
       link = document.createElement("link");
       link.rel = "icon";
       document.getElementsByTagName("head")[0].appendChild(link);
-      link.href = myProfile;
     }
+    link.href = pageHeader.favIcon;
+
     //set page description here
     let descriptionMeta = document.querySelector("meta[name~='description']");
     if (!descriptionMeta) {
@@ -19,7 +19,7 @@ const useSetWebsiteHeader = () => {
       descriptionMeta.name = "description";
       document.getElementsByTagName("head")[0].appendChild(descriptionMeta);
     }
-    descriptionMeta.content = "Portfolio Web site created by Eng/Abdul Qader";
+    descriptionMeta.content = pageHeader.description;
   }, []);
 };
 

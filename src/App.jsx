@@ -5,6 +5,7 @@ import Skill from "./Components/Skill/Skill";
 import Testimonial from "./Components/Testimonial/Testimonial";
 import Work from "./Components/Work/Work";
 import useLocalizeDocumentAttributes from "./shared/hooks/useLocalizeDocumentAttributes";
+import useSetWebsiteHeader from "./shared/hooks/useSetWebsiteHeader";
 import Footer from "./shared/Navigation/Footer";
 import Navbar from "./shared/Navigation/NavBar";
 // import useSetWebsiteHeader from "./shared/hooks/useSetWebsiteHeader";
@@ -12,7 +13,7 @@ import Navbar from "./shared/Navigation/NavBar";
 // import './App.css'
 
 function App() {
-  // useSetWebsiteHeader();
+  useSetWebsiteHeader();
   useLocalizeDocumentAttributes();
 
   return (

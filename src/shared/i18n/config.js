@@ -8,9 +8,6 @@ export const supportedLangs = {
 i18n
   .use(
     resourcesToBackend((lang, namespace, callback) => {
-      console.log("lang: ", lang);
-      console.log("namespace: ", namespace);
-
       import(`./locales/${lang}/${namespace}.json`)
         .then((resources) => {
           callback(null, resources);
