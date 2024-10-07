@@ -10,11 +10,15 @@ export const generalDetails = {
   logo: myLogo,
   name: "AbdulQader",
 };
-export const pageHeader = {
-  title: { en: "Abdul Qader", ar: "عبدالقادر" },
-  favIcon: myProfile,
+export const pageMetaDetails = {
+  title: { en: "Abdul Qader ", ar: "عبدالقادر " },
+  profile: myProfile,
+  logo: myLogo,
   keywords: [],
-  description: "Portfolio Web site created by Eng/Abdul Qader",
+  description: {
+    en: "Portfolio Web site created by Eng/Abdul Qader",
+    ar: "صفحة بروفايل صنعة بواسطة م/عبدالقادر",
+  },
 };
 export const copyrights = [
   { en: "@2024 Qadoor", ar: "@2024 قدور" },

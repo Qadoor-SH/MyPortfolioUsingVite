@@ -8,7 +8,7 @@ const MotionWrap = (Component, classNames) => {
         transition={{ duration: 0.5 }}
         className={`${classNames} app__flex`}
       >
-        <Component></Component>
+        <Component />
       </motion.div>
     );
   };

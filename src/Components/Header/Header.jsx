@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import images from "../../shared/constants/images";
-import { heroSectionDetails } from "../../userDetails";
+import { heroSectionDetails, pageMetaDetails } from "../../userDetails";
 import AppWrap from "../../shared/HOC/AppWrap";
 import "./Header.css";
 
@@ -15,11 +15,6 @@ const scaleVariants = {
     },
   },
 };
-// const mainSkillsCircles = [images.redux, images.react, images.netCore];
-// const tags = [
-//   { en: "Web Developer", ar: "مطور برامج" },
-//   { en: "Freelancer", ar: "عامل حر" },
-// ];
 const Header = () => {
   const { t, i18n } = useTranslation();
   return (
@@ -34,7 +29,9 @@ const Header = () => {
             <span className="">👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text ">{t("hello_i_am")}</p>
-              <h1 className="head-text">AbdulQader</h1>
+              <h1 className="head-text">
+                {pageMetaDetails.title[i18n.resolvedLanguage]}
+              </h1>
             </div>
           </div>
           <div className="tag-cmp app__flex">
@@ -51,7 +48,7 @@ const Header = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="app__header-img"
       >
-        <img src={images.myProfile} alt="profile-bg" />
+        <img src={pageMetaDetails.profile} alt="profile-bg" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -64,15 +61,10 @@ const Header = () => {
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
         transition={{ duration: 0.5, delay: 0.5 }}
-        // className=" items-start h-full ms-4"
         className="app__header-circles "
       >
         {heroSectionDetails.mainSkillsCircles.map((circle, index) => (
-          <div
-            // className="circle-cmp flex justify-center items-center rounded-[50%] bg-white shadow-card first:w-24 first:h-24 last:w-16 last:h-16 even:w-36 even:h-36 even:m-7"
-            className=" circle-cmp app__flex"
-            key={`circle-${index}`}
-          >
+          <div className=" circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="circle" />
           </div>
         ))}

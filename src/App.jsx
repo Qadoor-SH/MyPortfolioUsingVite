@@ -1,4 +1,3 @@
-// import { About } from "./Components";
 import About from "./Components/About/About";
 import Header from "./Components/Header/Header";
 import Skill from "./Components/Skill/Skill";
@@ -8,9 +7,7 @@ import useLocalizeDocumentAttributes from "./shared/hooks/useLocalizeDocumentAtt
 import useSetWebsiteHeader from "./shared/hooks/useSetWebsiteHeader";
 import Footer from "./shared/Navigation/Footer";
 import Navbar from "./shared/Navigation/NavBar";
-// import useSetWebsiteHeader from "./shared/hooks/useSetWebsiteHeader";
-
-// import './App.css'
+import ShareButton from "./shared/UIElements/ShareButton";
 
 function App() {
   useSetWebsiteHeader();
@@ -25,6 +22,7 @@ function App() {
       <Skill />
       <Testimonial />
       <Footer />
+      <ShareButton />
     </div>
   );
 }

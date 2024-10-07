@@ -2,7 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import resourcesToBackend from "i18next-resources-to-backend";
 export const supportedLangs = {
-  ar: "Arabic (العربية)",
+  ar: "العربية",
   en: "English",
 };
 i18n

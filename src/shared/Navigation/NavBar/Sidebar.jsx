@@ -1,40 +1,49 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
-import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
-import { HiX } from "react-icons/hi";
-const Sidebar = ({ items, onToggle }) => {
+import { HiX, HiMenuAlt4 } from "react-icons/hi";
+
+import "./index.css";
+const Sidebar = ({ items }) => {
+  const [toggle, setToggle] = useState(false);
   const { t } = useTranslation();
 
   return (
-    <motion.aside
-      className={`app__sidebar bg-white`}
-      whileInView={{ x: [0, 0] }}
-      transition={{ duration: 0.85, ease: "linear" }}
-    >
-      <div>
-        <HiX onClick={onToggle} />
-        <ul className="space-y-2 font-medium ">
-          {items.map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item}`}
-                className="flex items-center p-2 rounded-lg ms-3"
-                onClick={onToggle}
-              >
-                {t(item)}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </motion.aside>
+    <div className="app__navbar-menu">
+      <button
+        className="app__navbar-menu-btn app__flex"
+        onClick={() => setToggle(true)}
+      >
+        <HiMenuAlt4 />
+      </button>
+      {toggle && (
+        <aside>
+          <div>
+            <button className="app__flex" onClick={() => setToggle(false)}>
+              <HiX />
+            </button>
+            <ul>
+              {items.map((item) => (
+                <li key={item}>
+                  <a
+                    href={`#${item}`}
+                    className="app__navbar-menu-item"
+                    onClick={() => setToggle(false)}
+                  >
+                    {t(item)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </aside>
+      )}
+    </div>
   );
 };
 
 Sidebar.propTypes = {
-  toggle: PropTypes.bool.isRequired,
-  onToggle: PropTypes.func.isRequired,
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 

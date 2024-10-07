@@ -8,7 +8,7 @@ const AppWrap = (Component, idName, classNames) => {
     const { i18n } = useTranslation();
     return (
       <div id={idName} className={`app__container ${classNames}`}>
-        <SocialMedia />
+        <NavigationDots active={idName} />
         <div className="app__wrapper app__flex">
           <Component />
           <div className="copyright ">
@@ -19,9 +19,10 @@ const AppWrap = (Component, idName, classNames) => {
             ))}
           </div>
         </div>
-        <NavigationDots active={idName} />
+        <SocialMedia />
       </div>
     );
   };
 };
+
 export default AppWrap;

@@ -6,6 +6,18 @@ export default {
       backgroundImage: {
         "header-image": "url('/src/assets/bgIMG.png')",
       },
+      backdropBlur: {
+        navbar: "4px",
+      },
+      backgroundColor: {
+        navbar: "rgba(255, 255, 255, 0.25)",
+      },
+      boxShadowColor: {
+        navbar: "rgba( 31, 38, 135, 0.37 )",
+      },
+      borderColor: {
+        navbar: "rgba(255, 255, 255, 0.18)",
+      },
       screens: {
         sm: "640px",
         md: "768px",

@@ -53,7 +53,9 @@ const Footer = () => {
         setLoading(() => false);
         setIsFormSubmitted(() => true);
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log("submit: ", error);
+
         setIsFormSubmitted(false);
         setLoading(false);
       });

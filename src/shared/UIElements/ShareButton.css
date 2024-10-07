@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app__share {
+    @apply fixed top-[-1] bottom-0 ltr:left-0 rtl:right-0 z-20 flex-col p-4 w-20;
+
+    div {
+      @apply flex-col w-full h-full my-2 space-y-1;
+      svg {
+        @apply w-full h-full;
+      }
+    }
+  }
+  .app__share-icon {
+    @apply p-3 rounded-full cursor-pointer order-last hover:bg-secondary hover:text-white;
+  }
+  .icon-active {
+    @apply bg-secondary text-white;
+  }
+}

@@ -1,7 +1,9 @@
 import { useEffect } from "react";
-import { pageHeader } from "../../userDetails";
+import { pageMetaDetails } from "../../userDetails";
+import { useTranslation } from "react-i18next";
 
 const useSetWebsiteHeader = () => {
+  const { i18n } = useTranslation();
   useEffect(() => {
     //set page icon here
     let link = document.getElementById("link[rel~='icon']");
@@ -10,7 +12,7 @@ const useSetWebsiteHeader = () => {
       link.rel = "icon";
       document.getElementsByTagName("head")[0].appendChild(link);
     }
-    link.href = pageHeader.favIcon;
+    link.href = pageMetaDetails.profile;
 
     //set page description here
     let descriptionMeta = document.querySelector("meta[name~='description']");
@@ -19,7 +21,8 @@ const useSetWebsiteHeader = () => {
       descriptionMeta.name = "description";
       document.getElementsByTagName("head")[0].appendChild(descriptionMeta);
     }
-    descriptionMeta.content = pageHeader.description;
+    descriptionMeta.content =
+      pageMetaDetails.description[i18n.resolvedLanguage];
   }, []);
 };
 
