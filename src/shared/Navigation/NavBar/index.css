@@ -65,9 +65,6 @@
         @apply h-full px-3 py-4 overflow-y-auto;
         button {
           @apply p-2 rounded-full text-2xl hover:text-white hover:bg-secondary;
-          svg {
-            /* @apply w-full h-full; */
-          }
         }
         ul {
           @apply space-y-2 font-medium;

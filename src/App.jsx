@@ -8,7 +8,7 @@ import useSetWebsiteHeader from "./shared/hooks/useSetWebsiteHeader";
 import Footer from "./shared/Navigation/Footer";
 import Navbar from "./shared/Navigation/NavBar";
 import ShareButton from "./shared/UIElements/ShareButton";
-
+import "./App.css";
 function App() {
   useSetWebsiteHeader();
   useLocalizeDocumentAttributes();

@@ -23,7 +23,7 @@ const useSetWebsiteHeader = () => {
     }
     descriptionMeta.content =
       pageMetaDetails.description[i18n.resolvedLanguage];
-  }, []);
+  }, [i18n.resolvedLanguage]);
 };
 
 export default useSetWebsiteHeader;
