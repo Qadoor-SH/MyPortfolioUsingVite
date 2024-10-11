@@ -66,7 +66,7 @@ const ShareButton = () => {
               title={pageMetaDetails.title[i18n.resolvedLanguage]}
               separator={`\n ${
                 pageMetaDetails.description[i18n.resolvedLanguage]
-              } \n`}
+              } \n \n`}
               url={deployedWebUrl}
               lang={i18n.resolvedLanguage}
               dir={i18n.dir(i18n.resolvedLanguage)}
