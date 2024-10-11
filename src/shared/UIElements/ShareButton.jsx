@@ -46,7 +46,7 @@ const ShareButton = () => {
             }}
           >
             <FacebookShareButton
-              hashtag="#portfolio"
+              hashtag={"portfolio"}
               url={deployedWebUrl}
               lang={i18n.resolvedLanguage}
               dir={i18n.dir(i18n.resolvedLanguage)}
@@ -56,7 +56,6 @@ const ShareButton = () => {
 
             <TwitterShareButton
               title={pageMetaDetails.title[i18n.resolvedLanguage]}
-              description={pageMetaDetails.description[i18n.resolvedLanguage]}
               url={deployedWebUrl}
               lang={i18n.resolvedLanguage}
               dir={i18n.dir(i18n.resolvedLanguage)}
@@ -65,9 +64,10 @@ const ShareButton = () => {
             </TwitterShareButton>
             <WhatsappShareButton
               title={pageMetaDetails.title[i18n.resolvedLanguage]}
-              separator={pageMetaDetails.description[i18n.resolvedLanguage]}
+              separator={
+                pageMetaDetails.description[i18n.resolvedLanguage] + "<br/>"
+              }
               url={deployedWebUrl}
-              content="qadoor"
               lang={i18n.resolvedLanguage}
               dir={i18n.dir(i18n.resolvedLanguage)}
             >
@@ -86,6 +86,7 @@ const ShareButton = () => {
               title={pageMetaDetails.title[i18n.resolvedLanguage]}
               summary={pageMetaDetails.description[i18n.resolvedLanguage]}
               url={deployedWebUrl}
+              source={deployedWebUrl}
               lang={i18n.resolvedLanguage}
               dir={i18n.dir(i18n.resolvedLanguage)}
             >
