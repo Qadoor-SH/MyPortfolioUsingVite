@@ -64,9 +64,9 @@ const ShareButton = () => {
             </TwitterShareButton>
             <WhatsappShareButton
               title={pageMetaDetails.title[i18n.resolvedLanguage]}
-              separator={
-                pageMetaDetails.description[i18n.resolvedLanguage] + "<br/>"
-              }
+              separator={`${
+                pageMetaDetails.description[i18n.resolvedLanguage]
+              } /n \n`}
               url={deployedWebUrl}
               lang={i18n.resolvedLanguage}
               dir={i18n.dir(i18n.resolvedLanguage)}
