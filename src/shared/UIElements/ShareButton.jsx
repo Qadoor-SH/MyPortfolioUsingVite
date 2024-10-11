@@ -45,7 +45,12 @@ const ShareButton = () => {
               // staggerDirection: 1,
             }}
           >
-            <FacebookShareButton hashtag="#portfolio" url={deployedWebUrl}>
+            <FacebookShareButton
+              hashtag="#portfolio"
+              url={deployedWebUrl}
+              lang={i18n.resolvedLanguage}
+              dir={i18n.dir(i18n.resolvedLanguage)}
+            >
               <FacebookIcon {...iconsVariants} />
             </FacebookShareButton>
 
@@ -53,6 +58,8 @@ const ShareButton = () => {
               title={pageMetaDetails.title[i18n.resolvedLanguage]}
               description={pageMetaDetails.description[i18n.resolvedLanguage]}
               url={deployedWebUrl}
+              lang={i18n.resolvedLanguage}
+              dir={i18n.dir(i18n.resolvedLanguage)}
             >
               <XIcon {...iconsVariants} />
             </TwitterShareButton>
@@ -60,17 +67,27 @@ const ShareButton = () => {
               title={pageMetaDetails.title[i18n.resolvedLanguage]}
               separator={pageMetaDetails.description[i18n.resolvedLanguage]}
               url={deployedWebUrl}
+              content="qadoor"
+              lang={i18n.resolvedLanguage}
+              dir={i18n.dir(i18n.resolvedLanguage)}
             >
               <WhatsappIcon {...iconsVariants} />
             </WhatsappShareButton>
 
-            <TelegramShareButton title="Eng\Abdul qader " url={deployedWebUrl}>
+            <TelegramShareButton
+              title={pageMetaDetails.title[i18n.resolvedLanguage]}
+              url={deployedWebUrl}
+              lang={i18n.resolvedLanguage}
+              dir={i18n.dir(i18n.resolvedLanguage)}
+            >
               <TelegramIcon {...iconsVariants} />
             </TelegramShareButton>
             <LinkedinShareButton
               title={pageMetaDetails.title[i18n.resolvedLanguage]}
               summary={pageMetaDetails.description[i18n.resolvedLanguage]}
               url={deployedWebUrl}
+              lang={i18n.resolvedLanguage}
+              dir={i18n.dir(i18n.resolvedLanguage)}
             >
               <LinkedinIcon {...iconsVariants} />
             </LinkedinShareButton>
