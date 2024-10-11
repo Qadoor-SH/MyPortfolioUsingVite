@@ -1,4 +1,4 @@
-import myLogo from "../../../assets/myLogo.png";
+import { pageMetaDetails } from "../../../config/userDetails";
 import LanguageDropdown from "./LanguageDropdown";
 import NavbarLinks from "./NavbarLinks";
 import Sidebar from "./Sidebar";
@@ -16,10 +16,9 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <a href="#" className="app__navbar-logo">
-        <img src={myLogo} alt="logo" />
+        <img src={pageMetaDetails.logo} alt="logo" />
       </a>
       <LanguageDropdown />
-
       <NavbarLinks items={navItems} />
       <Sidebar items={navItems} />
     </nav>

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { pageMetaDetails } from "../../userDetails";
+import { pageMetaDetails } from "../../config/userDetails";
 import { useTranslation } from "react-i18next";
 
 const useSetWebsiteHeader = () => {

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { client, urlFor } from "../../client";
+import { client, urlFor } from "../../shared/util/client";
 import "./Testimonial.css";
 import AppWrap from "../../shared/HOC/AppWrap";
 import MotionWrap from "../../shared/HOC/MotionWrap";

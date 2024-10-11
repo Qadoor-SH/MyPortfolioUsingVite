@@ -3,11 +3,11 @@ import { useTranslation } from "react-i18next";
 import { BsWhatsapp, BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
 
-import { contacts } from "../../../userDetails";
 import images from "../../constants/images";
-import { client } from "../../../client";
+import { client } from "../../util/client";
 import AppWrap from "../../HOC/AppWrap";
 import MotionWrap from "../../HOC/MotionWrap";
+import { contacts } from "../../../config/userDetails";
 
 import "./index.css";
 

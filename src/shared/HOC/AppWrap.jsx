@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import NavigationDots from "../UIElements/NavigationDots";
 import SocialMedia from "../UIElements/SocialMedia";
-import { copyrights } from "../../userDetails";
+import { copyrights } from "../../config/userDetails";
 
 const AppWrap = (Component, idName, classNames) => {
   return function HOC() {

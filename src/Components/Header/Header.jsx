@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import images from "../../shared/constants/images";
-import { heroSectionDetails, pageMetaDetails } from "../../userDetails";
+import { heroSectionDetails, pageMetaDetails } from "../../config/userDetails";
 import AppWrap from "../../shared/HOC/AppWrap";
 import "./Header.css";
 

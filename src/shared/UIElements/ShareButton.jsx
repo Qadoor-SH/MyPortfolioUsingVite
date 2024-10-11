@@ -14,7 +14,7 @@ import {
 import { BsShareFill } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { deployedWebUrl, pageMetaDetails } from "../../userDetails";
+import { deployedWebUrl, pageMetaDetails } from "../../config/userDetails";
 
 import "./ShareButton.css";
 

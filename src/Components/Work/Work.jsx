@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
-import { client, urlFor } from "../../client";
+import { client, urlFor } from "../../shared/util/client";
 import AppWrap from "../../shared/HOC/AppWrap";
 import MotionWrap from "../../shared/HOC/MotionWrap";
 import "./Work.css";

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Tooltip } from "react-tooltip";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { client, urlFor } from "../../client";
+import { client, urlFor } from "../../shared/util/client";
 import AppWrap from "../../shared/HOC/AppWrap";
 import MotionWrap from "../../shared/HOC/MotionWrap";
 import "./Skill.css";

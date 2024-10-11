@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { pageMetaDetails } from "../../userDetails";
+import { pageMetaDetails } from "../../config/userDetails";
 
 const useLocalizeDocumentAttributes = () => {
   const { i18n } = useTranslation();
