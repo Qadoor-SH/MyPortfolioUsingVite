@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { pageMetaDetails } from "../../config/userDetails";
 import { useTranslation } from "react-i18next";
+import { pageMetaDetails } from "../../config/userDetails";
 
 const useSetWebsiteHeader = () => {
   const { i18n } = useTranslation();
